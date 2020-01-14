@@ -43,7 +43,7 @@ describe("测试count",()=>{
       count.minus();
       expect(count.number).toBe(-1);
     });
-    test.only("测试minus1",()=>{
+    test("测试minus1",()=>{
       console.log("测试minus1");
       count.minus1();
       expect(count.number).toBe(-2);

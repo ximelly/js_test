@@ -1,6 +1,7 @@
 import Counter from "./count"
 
 //每个describe都可以有自己的钩子函数
+//忽略其他测试，只执行当前一个测试用例test.only()
 describe("测试count",()=>{
   let count=null;
   beforeAll(()=>{
@@ -42,7 +43,7 @@ describe("测试count",()=>{
       count.minus();
       expect(count.number).toBe(-1);
     });
-    test("测试minus1",()=>{
+    test.only("测试minus1",()=>{
       console.log("测试minus1");
       count.minus1();
       expect(count.number).toBe(-2);

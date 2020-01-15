@@ -21,7 +21,7 @@ test("测试配置文件", () => {
 test.only("测试配置文件", () => {
   expect(generateConfig()).toMatchInlineSnapshot(//toMatchInlineSnapshot:生成行内快照
     {
-      time: expect.any(Date) //time可以为任何类型的data，不必每次都相等
+      time: expect.any(Date)
     },
     `
     Object {
